@@ -1,0 +1,44 @@
+---
+title: "Practical 1"
+author: "Alex Xu"
+format: html
+---
+comapre the number of genes with regionally elevated expression in different regions of the forebrain in human pig and mouse
+
+human
+
+```{r}
+total_human<-sum(180,83,57,110)
+print(total_human)
+```
+pig
+```{r}
+total_pig<-sum(109,157,31,45)
+print(total_pig)
+```
+mouse
+```{r}
+total_mouse<-sum(55,185,60,98)
+print(total_mouse)
+```
+The highest is 430 in human
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this 
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
