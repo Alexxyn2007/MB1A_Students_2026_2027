@@ -1,0 +1,25 @@
+print(rep(5,7))
+print(rep(x=5,times=7))
+x<-"Rstudio"
+print(x)
+print(class(x))
+x<-570
+print(x)
+print(class(x))
+x<-FALSE
+print(x)
+print(class(x))
+x<-true
+print(class(x))
+
+cell_id_1 <- "CX1"
+cell_id_2 <- "CX2"
+
+treated_1 <- TRUE
+treated_2 <- FALSE
+
+n_before_1 <- 5415
+n_before_2 <- 8123
+
+n_after_1 <- 1432
+n_after_2 <- 7543
