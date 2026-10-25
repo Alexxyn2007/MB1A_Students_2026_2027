@@ -1,0 +1,25 @@
+
+library(tidyverse)
+library(gt)
+rhinovirus <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
+gt(head(rhinovirus))
+
+weather <- read_csv("data/weather_data.csv")
+ggplot(weather, aes(
+  x = observation_time,
+  y = temperature_c
+))  +
+  geom_line(colour = "red") +
+  xlab("Date") +
+  ylab("Temp (C)") +
+  ggtitle("Temperature by Date")
+  
+health <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
+ggplot(health, aes(
+  x = date,
+  y = metric_value
+))  +
+  geom_line(colour = "green") +
+  xlab("Date") +
+  ylab("Metric") +
+  ggtitle("Percentage of positive PCR test results for rhinovirus")
